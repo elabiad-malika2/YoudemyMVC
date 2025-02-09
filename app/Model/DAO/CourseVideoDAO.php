@@ -2,6 +2,8 @@
 // require_once 'Connection.php';
 namespace App\Model\DAO;
 Use App\Model\Entity\CourseVideo;
+Use App\Config\Database;
+
 
 class CoursVideoDAO {
     private $pdo;

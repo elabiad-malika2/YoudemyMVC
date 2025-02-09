@@ -1,7 +1,5 @@
 {
     "name": "youco/youdemy-mvc",
-    "description": "Tesing",
-    "license": "MIT",
     "autoload": {
         "psr-4": {
             "App\\": "app/"
@@ -13,6 +11,5 @@
             "email": "elabiadmalika64@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {}
 }

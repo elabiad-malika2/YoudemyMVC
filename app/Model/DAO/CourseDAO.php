@@ -5,6 +5,7 @@
 namespace App\Model\DAO;
 
 Use App\Model\Entity\Cours;
+Use App\Config\Database;
 
 
 class CourseDAO {

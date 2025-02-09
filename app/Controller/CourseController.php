@@ -5,6 +5,9 @@ Use App\Model\Entity\CourseVideo;
 Use App\Model\Entity\CourseText;
 
 class CourseController{
+    public function AddCorse(){
+        
+    }
     
 }
 

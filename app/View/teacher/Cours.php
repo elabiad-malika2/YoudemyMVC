@@ -127,25 +127,25 @@
                     <span>Add New Course</span>
                 </button>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-    <!-- Statistiques des cours -->
-    <?php foreach ($studentIn as $courseStats): ?>
-        <div class="bg-white p-6 rounded-lg shadow-lg border border-blue-200 hover:shadow-xl transition-shadow duration-300">
-            <div class="flex items-center justify-between">
-                <div>
-                    <p class="text-blue-600 text-sm font-semibold"><?= htmlspecialchars($courseStats['titre']); ?></p>
-                    <h3 class="text-3xl font-extrabold text-gray-800 mt-2">
-                        <?= htmlspecialchars($courseStats['totalEtudiant']); ?> Students
-                    </h3>
-                    <p class="text-gray-500 text-sm mt-1">Students: <?= htmlspecialchars($courseStats['nomEtd']); ?></p>
-                </div>
-                <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full">
-                    <i class="ri-user-line text-3xl text-blue-500"></i>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <!-- Statistiques des cours -->
+        <?php foreach ($studentIn as $courseStats): ?>
+            <div class="bg-white p-6 rounded-lg shadow-lg border border-blue-200 hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-blue-600 text-sm font-semibold"><?= htmlspecialchars($courseStats['titre']); ?></p>
+                        <h3 class="text-3xl font-extrabold text-gray-800 mt-2">
+                            <?= htmlspecialchars($courseStats['totalEtudiant']); ?> Students
+                        </h3>
+                        <p class="text-gray-500 text-sm mt-1">Students: <?= htmlspecialchars($courseStats['nomEtd']); ?></p>
+                    </div>
+                    <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full">
+                        <i class="ri-user-line text-3xl text-blue-500"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-    <?php endforeach; ?>
-</div>
+        <?php endforeach; ?>
+    </div>
 
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -48,10 +48,11 @@ class Router {
 
             if ($match) {
                 if (!$this->checkPermission($route)) {
-                    throw new \Exception('Accès non autorisé');
+                    throw new \Exception('Accès non autor   isé');
                 }
 
                 $controllerName = "App\\Controller\\" . $route['controller'];
+                echo  $controllerName;
                 $controller = new $controllerName();
                 $action = $route['action'];
 

@@ -1,4 +1,7 @@
 <?php
+namespace App\Config;
+Use PDO;
+
 class Database {
     private static $instance = null;
     private $pdo;
@@ -15,7 +18,7 @@ class Database {
 
     public static function getInstance($dsn = null, $username = null, $password = null) {
         if (self::$instance === null) {
-            $dsn = $dsn ?? 'pgsql:host=localhost;dbname=postgres';
+            $dsn = $dsn ?? 'pgsql:host=localhost;dbname=Youdemy';
             $username = $username ?? 'postgres';
             $password = $password ?? 'root';
             self::$instance = new Database($dsn, $username, $password);

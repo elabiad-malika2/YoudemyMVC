@@ -4,6 +4,8 @@
 namespace App\Model\DAO;
 
 Use App\Model\Entity\CourseText;
+Use App\Config\Database;
+
 
 
 class CourseTexteDAO {
