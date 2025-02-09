@@ -8,7 +8,7 @@ class Core {
     protected $params = [];
 
     public function __construct(){
-       $url = $this->getUrl();
+        $url = $this->getUrl();
 
         // Look in controllers for first value
         if(isset($url[0]) ){
