@@ -320,7 +320,7 @@ require_once __DIR__ ."/../include/heads.php";
 </section>
 
 <?php
-require_once __DIR__ ."./../include/footer.php";
+require_once __DIR__ ."/../include/footer.php";
 ?>
 </body>
 </html>
