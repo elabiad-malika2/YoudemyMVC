@@ -10,9 +10,9 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 class HomeController extends Controller {
     public function index() {
-      $data[] = Cours::afficherDeux();
-      $data[] = Categorie::getAll();
-      $this->view('client/index', $data);
+        $data[] = Cours::afficherDeux();
+        $data[] = Categorie::getAll();
+        $this->view('client/index', $data);
     }
     public function cours($page = 0) {
         $data['$isEtudiant'] = false;

@@ -180,15 +180,13 @@ abstract class Cours  {
                 } else 
                 {
                     $cour = new coursTexte($row['id'], $row['titre'], $row['description'], $row['categorie_id'], $row['image_path'], $row['contenu'],$row['enseignant_id'] ,$row['contenu_type'],$row['status']);
-               
                     $coursList[]=$cour;
                 }
     }
     return $coursList;
 
 }
-   public static function afficherDeux(){
-  
+    public static function afficherDeux(){
     $pdo = Database::getInstance()->getConnection();
     $stmt = $pdo->query("SELECT * FROM CoursView ORDER BY id DESC LIMIT 2");
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
