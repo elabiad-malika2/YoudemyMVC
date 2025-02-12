@@ -81,9 +81,6 @@ class HomeController extends Controller {
 
         $this->view('signup', $data);
     }
-    public function myfunction(...$data)
-    {
-        print_r($data);
-    }
+    
 }
 ?>
